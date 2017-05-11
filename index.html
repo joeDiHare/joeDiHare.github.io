@@ -7,39 +7,32 @@
 <div id="info"></div>
 <div>
 <select id='sel'>
-	<option selected>Team member</option>
-	<option>Stefano</option>
-	<option>Helene</option>
-	<option>Greg</option>
-	<option>James</option>
-	<option>Amir</option>
-	<option>Ashish</option>
+  <option selected>Team member</option>
+  <option>Stefano</option>
+  <option>Helene</option>
+  <option>Greg</option>
+  <option>James</option>
+  <option>Amir</option>
+  <option>Ashish</option>
 </select>
 </div>
-<svg width="1300" height="800"></svg>
+ <div class="top-info"><a href='https://docs.google.com/document/d/1baxB4C77EOQyEXq3yahrwyJou0DzbZG2BJocpf8TTlQ/edit?usp=sharing' target='_blank'>Read More About the Project</a></div>
+ <svg width="1300" height="800"></svg>
 
 
 <style>
-.title {
-	position:fixed;
-	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-	color:white; 
-	font-size:250%;
-	left: 60%;
-	top: 5%;
-}
 .land {
-	/*fill: #17a6ec;*/
-	fill: #4682b4;
-	/*fill: #708090;*/
+  /*fill: #17a6ec;*/
+  fill: #4682b4;
+  /*fill: #708090;*/
   /*fill: #ddd;*/
 }
 .state-borders {
-	fill: none;
+  fill: none;
     stroke: #fff;
 }
 .contact-arc {
-	fill: none;
+  fill: none;
 }
 .contact:hover .contact-arc {
   stroke: #330000;
@@ -67,20 +60,44 @@
     background-color: rgba(255, 255, 255, 0);
 }
 #info {
-	font-family: 'Open Sans', Arial, sans-serif;
-  	text-align: center;
-	font-size:120%;
-	position:fixed;
-	top: 59.5%;
-	left: 35%;
-	width:30%;
-	height:auto;
-	margin-top: -9em; /*set to a negative number 1/2 of your height*/
-	margin-left: 0em; /*set to a negative number 1/2 of your width*/
-	border: 1px solid #ccc;
-	background-color: rgba(255, 255, 255, .3);
-	border-radius:25px;
-	min-height: 1.8em;  
+  font-family: 'Open Sans', Arial, sans-serif;
+  text-align: center;
+  font-size:120%;
+  position:fixed;
+  top: 59.5%;
+  left: 35%;
+  width:30%;
+  height:auto;
+  margin-top: -9em; /*set to a negative number 1/2 of your height*/
+  margin-left: 0em; /*set to a negative number 1/2 of your width*/
+  border: 1px solid #ccc;
+  background-color: rgba(255, 255, 255, .3);
+  border-radius:25px;
+  min-height: 1.8em;  
+}
+.top-info {
+  font-family: 'Open Sans', Arial, sans-serif;
+  text-align: center;
+  font-size:130%;
+  position:fixed;
+  top: 3%;
+  left: 3%;
+  width:20%;
+  height:auto;
+  border: 1px solid #ccc;
+  background-color: rgba(0, 0, 0, .8);
+  border-radius:25px;
+  min-height: 1.8em;    
+  font-weight: bold;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+.title {
+  position:fixed;
+  text-shadow: -1px 0 #4682b4, 0 1px #4682b4, 1px 0 #4682b4, 0 -1px #4682b4;
+  color:white; 
+  font-size:250%;
+  left: 60%;
+  top: 3%;
 }
 svg {
     position: absolute;
@@ -191,12 +208,12 @@ function ready(error, world, team_members, connections) {
 
 var options = document.getElementById('sel').options;
 $("select#sel").change(function(){
-	var selected = $("#sel option:selected").val();
-	var d = contactByName.get(selected);
-	$("#info").html(
-		"</br></br>"+        
-		"<img src='src/images/"+d.name_contact+".png' height='70' width='70'>"+
-    "<p>"+wordWrap(d.summary)+"</p>"+		
+  var selected = $("#sel option:selected").val();
+  var d = contactByName.get(selected);
+  $("#info").html(
+    "</br></br>"+        
+    "<img src='src/images/"+d.name_contact+".png' height='70' width='70'>"+
+    "<p>"+wordWrap(d.summary)+"</p>"+   
     "<p><a href='"+d.email+"' target='_blank'><img src='src/images/email_icon.png'  height='30' width='30'></a>"+
     "&nbsp;&nbsp;   <a href='https://www.linkedin.com/"+d.linkedin +"' target='_blank'><img src='src/images/linkedin_icon.png' height='30' width='30'></a>"+
     "&nbsp;&nbsp;   <a href='https://github.com/"+ d.github  +"' target='_blank'><img src='src/images/github_icon.png' height='30' width='30'></a></p>"+
@@ -219,7 +236,7 @@ function typeConnection(d) {
 function wordWrap(str) {
     return str;
     if (str===undefined){
-    	return '';
+      return '';
     }
 
     var L = 49;
@@ -235,4 +252,3 @@ function wordWrap(str) {
 }
 
 </script>
-
