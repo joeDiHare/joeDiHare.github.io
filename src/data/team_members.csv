@@ -1,7 +1,7 @@
 name_contact,name,city,country,latitude,longitude,email,github,linkedin,summary
 Stefano,Stefano Cosentino,Washington,USA,38.897615,-77.036563,stefano286@gmail.com,joeDiHare,in/stefano-cosentino-6a121a22/,"Engineer by training, my PhD was in signal processing fapplied to biomedical devices for deaf people. I studied and worked in the UK for 7 years but still prefer Italian tiramisu over pudding. Currently in Washington DC for a postdoc (University of Maryland). I enjoy projects that focus on building software or data insight."
-Helene,Helene Draux,London,UK,51.521168,0.114672,@gmail.com,,,
-Greg,Greg MacLennan,Boston,USA,41.366137,-71.055786,@gmail.com,,,
-James,James Wedell,Boston,USA,43.366137,-71.055786,@gmail.com,,,
-Amir,Amir Feizpour,Toronto,CANADA,43.66354,-79.37738,@gmail,,https://www.linkedin.com/in/amirfz/,
-Ashish,Ashish Verma,Toronto,CANADA,18.498846,73.876003,@gmail,,https://www.linkedin.com/in/ashish-verma-27773313/,
+Helene,Helene Draux,London,UK,51.521168,0.114672,@gmail.com,,,blurb missing
+Greg,Greg MacLennan,Boston,USA,41.366137,-71.055786,@gmail.com,,,blurb missing
+James,James Wedell,Boston,USA,43.366137,-71.055786,@gmail.com,,,blurb missing
+Amir,Amir Feizpour,Toronto,CANADA,43.66354,-79.37738,@gmail,,https://www.linkedin.com/in/amirfz/,blurb missing
+Ashish,Ashish Verma,Pune,INDIA,18.498846,73.876003,@gmail,,https://www.linkedin.com/in/ashish-verma-27773313/,blurb missing
